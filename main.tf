@@ -1,5 +1,5 @@
-resource "azurerm_disk_access" "disk_accesss" {
-  for_each = var.disk_accesss
+resource "azurerm_disk_access" "disk_accesses" {
+  for_each = var.disk_accesses
 
   location            = each.value.location
   name                = each.value.name

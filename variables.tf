@@ -1,6 +1,6 @@
-variable "disk_accesss" {
+variable "disk_accesses" {
   description = <<EOT
-Map of disk_accesss, attributes below
+Map of disk_accesses, attributes below
 Required:
     - location
     - name
