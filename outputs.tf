@@ -1,3 +1,7 @@
+output "disk_accesses_id" {
+  description = "Map of id values across all disk_accesses, keyed the same as var.disk_accesses"
+  value       = { for k, v in azurerm_disk_access.disk_accesses : k => v.id }
+}
 output "disk_accesses_location" {
   description = "Map of location values across all disk_accesses, keyed the same as var.disk_accesses"
   value       = { for k, v in azurerm_disk_access.disk_accesses : k => v.location }
